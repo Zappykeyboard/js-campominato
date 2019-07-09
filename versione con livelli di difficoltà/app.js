@@ -54,7 +54,11 @@ function mineSweeper(difficulty) {
 
         if (mines.includes(choice)) {
           alert("hai beccato una mina!");
-          i = 101;
+          i = range + 1;
+        }
+
+        if (i === range){
+          alert("hai vinto!"); 
         }
 
       } else if (userChoices.includes(choice)) {

@@ -33,6 +33,10 @@ function generateMines(range){
      if (mines.includes(choice)){
        alert("hai beccato una mina!");
        i = 101;
+     } 
+
+     if (i === 100){
+       alert("hai vinto!"); 
      }
 
    } else if (userChoices.includes(choice)) {
