@@ -3,7 +3,6 @@ var difficulty;
 function mineSweeper(difficulty) {
 
   var mines = []
-  var userChoices = [];
   var range;
 
   switch (difficulty) {
@@ -42,6 +41,7 @@ function mineSweeper(difficulty) {
 
   //il giocatore sceglie i numeri da testare
   function playerChoice(range) {
+    var userChoices = [];
 
     for (var i = 1; i < range + 1; i++) {
       var choice = parseInt(prompt("inserisci un numero da 1 a " + range));
@@ -53,7 +53,7 @@ function mineSweeper(difficulty) {
         console.log("numeri scelti fin'ora: " + userChoices);
 
         if (mines.includes(choice)) {
-          alert("hai beccato una mina!");
+          alert("hai beccato una mina! Il tuo punteggio:" + userChoices.length);
           i = range + 1;
         }
 

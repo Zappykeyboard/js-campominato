@@ -1,5 +1,5 @@
 var mines= []
-var userChoices = [];
+
 //genera i numeri "minati"
 function generateMines(range){
   mines = [];
@@ -22,6 +22,7 @@ function generateMines(range){
 
  //il giocatore sceglie i numeri da testare
  for (var i = 1; i < 101; i++){
+  var userChoices = [];
    var choice = parseInt(prompt("inserisci un numero da 1 a 100"));
 
    //testiamo se un numero è già stato immesso e se è valido
@@ -31,8 +32,8 @@ function generateMines(range){
      console.log("numeri scelti fin'ora: " + userChoices);
 
      if (mines.includes(choice)){
-       alert("hai beccato una mina!");
-       i = 101;
+      alert("hai beccato una mina! Il tuo punteggio:" + userChoices.length);
+      i = 101;
      } 
 
      if (i === (100 - mines.length)){
