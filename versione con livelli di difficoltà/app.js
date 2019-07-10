@@ -6,7 +6,7 @@ function mineSweeper(difficulty) {
   var userChoices = [];
   var range;
 
-  switch (difficulty){
+  switch (difficulty) {
     case 0:
       range = 100;
       break;
@@ -40,9 +40,9 @@ function mineSweeper(difficulty) {
     }
   }
 
-
+  //il giocatore sceglie i numeri da testare
   function playerChoice(range) {
-    //il giocatore sceglie i numeri da testare
+
     for (var i = 1; i < range + 1; i++) {
       var choice = parseInt(prompt("inserisci un numero da 1 a " + range));
 
@@ -57,8 +57,8 @@ function mineSweeper(difficulty) {
           i = range + 1;
         }
 
-        if (i === range){
-          alert("hai vinto!"); 
+        if (i === range) {
+          alert("hai vinto!");
         }
 
       } else if (userChoices.includes(choice)) {
