@@ -35,7 +35,7 @@ function generateMines(range){
        i = 101;
      } 
 
-     if (i === 100 - mines.length){
+     if (i === (100 - mines.length)){
        alert("hai vinto!"); 
      }
 
