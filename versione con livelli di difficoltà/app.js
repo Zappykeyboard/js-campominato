@@ -57,7 +57,7 @@ function mineSweeper(difficulty) {
           i = range + 1;
         }
 
-        if (i === range) {
+        if (i === range - mines.length) {
           alert("hai vinto!");
         }
 
