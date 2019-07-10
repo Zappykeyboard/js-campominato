@@ -32,7 +32,7 @@ function generateMines(range){
      console.log("numeri scelti fin'ora: " + userChoices);
 
      if (mines.includes(choice)){
-      alert("hai beccato una mina! Il tuo punteggio:" + userChoices.length);
+      alert("hai beccato una mina! Il tuo punteggio:" + (userChoices.length - 1));
       i = 101;
      } 
 
